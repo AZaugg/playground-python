@@ -1,0 +1,12 @@
+class staticORclass(object):
+    value = 20
+
+    @staticmethod
+    def get_s():
+        return 2
+
+    @classmethod
+    def get_c(cls):
+        return cls.get_s()
+        
+print staticORclass.get_c()
